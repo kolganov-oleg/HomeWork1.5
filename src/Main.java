@@ -38,13 +38,17 @@ public class Main {
 
 
         for (int i = 0; i < arrayInt.length; i++) {
-            if (arrayInt[i] % 2 != 0)
+            if (arrayInt[i] % 2 != 0 && i == arrayInt.length - 1) {
                 arrayInt[i]++;
-            if (i == arrayInt.length -1) {
                 System.out.print(arrayInt[i] + " ");
             } else {
                 System.out.print(arrayInt[i] + ", ");
             }
+            // if (i == arrayInt.length -1) {
+            //   System.out.print(arrayInt[i] + " ");
+            //} else {
+//                 System.out.print(arrayInt[i] + ", ");
+            // }
         }
 
     }
